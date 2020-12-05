@@ -1,0 +1,240 @@
+@font-face {
+    font-family: "NerkoOne";
+    src: url(../fonts/NerkoOne-Regular.ttf) format("woff"),
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "NerkoOne";
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+.container {
+    color: blue;
+    width: 320px;
+    margin: 0 auto;
+}
+
+/* header */
+.header-container {
+    width: 320px;
+    height: 130px;
+    display: block;
+    position: fixed;
+    background-color: #9370DB;
+    padding-right: 1px;
+}
+.header {
+    
+}
+.logo {
+    width: 120px;
+    /* width: ; */
+}
+
+.title1 {
+    font-size: 45px;
+    padding-left: 100px;
+    /* text-align: center; */
+    margin-bottom: -60px;
+    padding-top: 6px;
+    font-family: 'Nerko One', cursive;
+}
+
+/* .title1::after {
+    background: url(../img/—Pngtree—logo\ template\ for\ and\ restaurant_5255565.png);
+    width: 300px;
+
+} */
+
+.menu-div {
+    /* padding-top: 0px; */
+    padding-right: 40px;
+    margin-left: 230px;
+    margin-top: -45px;
+}
+
+
+
+.menu {
+    font-weight: bold;
+    overflow: hidden;
+    margin-left: -60px;
+    margin-top: -10px;
+}
+
+.menu li:nth-child(2) {
+    position: relative;
+    padding-left: 20px;
+}
+
+.menu li:nth-child(2)::before {
+    position: absolute;
+    content: "";
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 22px;
+    height: 22px;
+    top: 0;
+    left: 0;
+}
+
+.nav_list {
+    /* padding-bottom: 28px; */
+}
+
+.menu li a {
+    color: rgb(255, 255, 255);
+}
+
+.menu li a:hover {
+    color: blue;
+    font-size: large;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0, );
+    border-radius: 15px;
+}
+
+.header .menu {
+    clear: both;
+    max-height: 0;
+    transition: max-height 0.2s ease-out;
+}
+
+.header .menu-btn {
+    display: none;
+}
+
+.header .menu-icon {
+    display: flex;
+    position: relative;
+    user-select: none;
+    cursor: grab;
+}
+
+.header .menu-icon .navicon {
+    display: block;
+    background: yellow;
+    width: 25px;
+    height: 3px;
+    position: relative;
+    transition: background 0.2s ease-out;
+}
+
+.header .menu-icon .navicon::before,
+.header .menu-icon .navicon::after {
+    display: block;
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transition: all 0.2s ease-out;
+}
+
+.header .menu-icon .navicon::before {
+    background: green;
+    top: 10px;
+}
+
+.header .menu-icon .navicon::after {
+    background: red;
+    top: -10px;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon {
+    background: transparent;
+}
+
+.header .menu-btn:checked~.menu-icon .navicon::before {
+    transform: rotate(-45deg);
+    top: 0;
+
+}
+
+.header .menu-btn:checked~.menu-icon .navicon::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+.header .menu-btn:checked~.menu {
+    max-height: 100%;
+}
+
+/* s1 */
+
+main {
+    padding-top: 129px;
+}
+
+.s1 {
+    padding: 225px 20px 0;
+    background: #535353 url("../img/682px-Kinolibre_vol._109_\(001\).jpg");
+    background-size: cover;
+    background-blend-mode: soft-light;
+    display: flex;
+    flex-flow: column;
+    align-items: flex-start;
+    color: white;
+}
+
+.s1_title {
+    font-size: 45px;
+    font-family: "GothamPro-Bold";
+    padding-right: 148px;
+    /* padding-bottom: 80px; */
+    text-align: center;
+}
+
+.s1_title:hover {
+    padding-left: 65px;
+}
+
+.s1_list-item {
+    font-size: 20px;
+    padding-left: 24px;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.s1_list-item:hover {
+    text-transform: uppercase;
+    font-family: "GothamPro-Bold";
+}
+
+.s1_list-item span {
+    color: #ffe100;
+}
+
+.s1_list {
+    padding: 24px 20px 150px 0;
+}
+
+.s1_list-item::before {
+    position: absolute;
+    content: "";
+    /* background: url(../images/icon/star.png); */
+    width: 14px;
+    height: 14px;
+    background-position: center;
+    background-repeat: no-repeat;
+    left: 0;
+}
+
+.s1_bottom-arrow {
+    transform: rotate(90deg);
+    color: #ffe100;
+    font-size: 24px;
+    font-weight: bold;
+    display: block;
+    margin: auto;
+    padding-right: 54px;
+}

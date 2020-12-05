@@ -176,8 +176,8 @@ a {
 }
 
 .s1-menu {
-    padding: 225px 20px 0;
-    background: #535353 url("../img/682px-Kinolibre_vol._109_\(001\).jpg");
+    padding: 25px 20px 0;
+    background: #380101;
     background-size: cover;
     background-blend-mode: soft-light;
     display: flex;
@@ -193,6 +193,7 @@ a {
     padding-right: 148px;
     /* padding-bottom: 80px; */
     text-align: center;
+    padding-bottom: 40px;
 }
 
 .s1-menu_title:hover {
@@ -238,4 +239,16 @@ a {
     display: block;
     margin: auto;
     padding-right: 54px;
+}
+
+.s1-menu_mini-title {
+    padding-bottom: 30px;
+}
+
+.s1-menu_table-item {
+    padding-bottom: 40px;
+}
+
+.s1-menu_table {
+    padding-bottom: 30px;
 }
